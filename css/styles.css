@@ -3,12 +3,13 @@
 
 /* color scheme 
 
-grey - #545454
-emerald - #419d78
-green - #84dd63
-green yellow - #cbff4d
-deep blue - #2f2963
-
+purple - #5c4d8a
+pink - #F97068
+blue - #3E6990
+orange - #f39b6d
+green - #98B9AB
+green 2 - #acb998
+black - #545454
 */
 
 * {
@@ -67,7 +68,7 @@ p {
 .nav_anchor {
     display: block;
     position: relative;
-    top: -125px;
+    top: -150px;
     visibility: hidden;
 }
 
@@ -152,49 +153,73 @@ ul.menu li a:hover, ul.menu li.active_menu a {
    ========================================================*/
 #intro_wrapper {
     min-height: 100vh;
-    padding: 175px 0px 0px;
-	background: url("../images/open_road.jpg") no-repeat top center;
+    padding: 125px 0px 0px;
+	background: url("../images/sunrise.jpg") no-repeat top center;
 	background-size: cover;
 }
 
 
+/*
 .intro_container {
 	background: rgb(255 255 255 / 92%);
 	clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-/*	box-shadow: 6px 5px 20px rgb(0 0 0 / 10%);*/
     padding: 50px 25px;
 	padding: 50px 25px;
     height: 650px;
     width: 800px;
     margin: 0 auto;
 }
+*/
 
+.intro_container {
+    background: rgb(255 255 255 / 92%);
+    /* clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%); */
+    box-shadow: 6px 5px 40px 10px rgb(0 0 0 / 10%);
+    padding: 50px 25px;
+    padding: 50px 25px;
+    height: 750px;
+    width: 750px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+
+
+/*
 .intro_container h1 {
-	/* font-size: 65px; */
     text-align: center;
     padding-top: 133px;
     line-height: 65px;
-    /* color: #3e6990; */
+    color: #3e6990;
     letter-spacing: -1px;
     font-family: 'Rubik', sans-serif;
     margin-bottom: 0;
     font-weight: 500;
 }
+*/
+
+.intro_container h1 {
+    text-align: center;
+    padding-top: 133px;
+    line-height: 65px;
+    color: #5c4d8a;
+    letter-spacing: -1px;
+}
 
 .intro_container h1 span {
 	font-family: 'Sacramento', cursive;
     font-weight: 700;
-	color: #f97068;
+/*	color: #f97068;*/
+	color: #acb998;
 }
 
 .intro_container h2 {
 	text-align: center;
-    font-size: 48px;
+    font-size: 42px;
     line-height: normal;
-    font-family: 'Sacramento', cursive;
-    font-weight: 700;
+/*    font-family: 'Sacramento', cursive;*/
+    font-weight: 500;
     color: #F39B6D;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 
@@ -263,7 +288,7 @@ ul.menu li a:hover, ul.menu li.active_menu a {
 
 .photo_rotator .slick-next::before {
     content: "\f061";
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: #3e6990;
     background: none;
@@ -274,7 +299,7 @@ ul.menu li a:hover, ul.menu li.active_menu a {
 
 .photo_rotator .slick-prev::before {
     content: "\f060";
-    font-family: "Font Awesome 6 Free";
+    font-family: "Font Awesome 5 Free";
     font-weight: 900;
     color: #007498;
     background: none;
@@ -357,6 +382,7 @@ h1 {
 	font-size: 80px;
     line-height: normal;
     color: #3e6990;
+	color: #5c4d8a;
     font-family: 'Rubik', sans-serif;
     font-family: 'Sacramento', cursive;
     font-family: 'Montez', cursive;
