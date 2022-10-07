@@ -197,12 +197,12 @@ input[type="button"] {
     text-transform: uppercase;
     text-decoration: none;
     /* white-space: nowrap; */
-    background-color: #F97068;
+    background-color: #F39B6D;
     border-radius: 10px;
-    border: 1px solid #F97068;
+    border: 1px solid #F39B6D;
     cursor: pointer;
     box-sizing: border-box;
-    margin: 20px 0px 10px;
+    margin: 5px 0px 0px;
 }
 .button:hover,
 button:hover,
@@ -215,8 +215,8 @@ input[type="submit"]:focus,
 input[type="reset"]:focus,
 input[type="button"]:focus {
   color: #ffffff !important;
-  border-color: #F39B6D;
-	background-color: #F39B6D;
+  border-color: #F97068;
+	background-color: #F97068;
 	text-decoration: none;
   outline: 0; }
 .button.button-primary,
@@ -394,9 +394,11 @@ td:last-child {
 
 /* Spacing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
 button,
 .button {
   margin-bottom: 1rem; }
+*/
 input,
 textarea,
 select,
@@ -410,7 +412,7 @@ table,
 p,
 ul,
 ol {
-  margin-bottom: 2.5rem; }
+  margin-bottom: 15px; }
 
 
 /* Utilities
