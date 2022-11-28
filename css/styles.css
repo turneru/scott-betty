@@ -219,7 +219,10 @@ ul.menu li a:hover, ul.menu li.active_menu a {
     line-height: normal;
 /*    font-family: 'Sacramento', cursive;*/
     font-weight: 500;
+/*
     color: #F39B6D;
+	color
+*/
     margin-top: 10px;
 }
 
@@ -251,23 +254,24 @@ ul.menu li a:hover, ul.menu li.active_menu a {
    ========================================================*/
 
 #phoenix_wrapper {
-    padding: 60px 0px 35px;
-    min-height: calc(100vh - 70px);
-	min-height: 100vh;
+    padding: 100px 0px 25px;
+    min-height: calc(100vh + 50px);
     background: #F97068;
 /*
 	background: url(../images/cacti.jpg) no-repeat top center;
     background-size: cover;
 */
+	background: url(../images/sparks.jpg?v=1);
+    background-size: cover;
+    background-position: center;
 }
 
 /* =============== Roadtrip styles ========================= 
    ========================================================*/
 
 #roadtrip_wrapper {
-    padding: 60px 0px 35px;
-    min-height: calc(100vh - 70px);
-	min-height: 100vh;
+    padding: 100px 0px 25px;
+    min-height: calc(100vh + 50px);
     background: url(../images/open_road.jpg) no-repeat top center;
     background-size: cover;
 }
@@ -276,16 +280,23 @@ ul.menu li a:hover, ul.menu li.active_menu a {
    ========================================================*/
 
 #photos_wrapper {
-    padding: 60px 0px 35px;
-    min-height: calc(100vh - 70px);
-	min-height: 100vh;
+    padding: 100px 0px 25px;
+    min-height: calc(100vh + 50px);
     background: #F39B6D;
+	background: #f17c56;
+}
+
+.photo_rotator {
+	min-height: 450px;
 }
 
 .slick-slide img {
     padding: 0px;
 	margin: 0 auto;
 	max-width: 700px;
+	width: auto;
+	max-height: 450px;
+	height: 100%;
 }
 
 .photo_rotator .slick-prev, .photo_rotator .slick-next {
@@ -331,10 +342,14 @@ ul.menu li a:hover, ul.menu li.active_menu a {
 
 #messages_wrapper {
     width: 100%;
-    min-height: calc(100vh - 70px);
-    padding: 75px 0px 50px;
-    background-color: #acb998;    
+    min-height: calc(100vh + 50px);
+    padding: 100px 0px 25px;
+    background-color: #acb998; 
+	background-color: #8d9951;
     text-align: center;
+	background: url(../images/lights2.jpg?v=1);
+    background-size: cover;
+    background-position: center;
 }
 
 .message_container {
@@ -367,10 +382,15 @@ ul.menu li a:hover, ul.menu li.active_menu a {
 
 .quote {
 	font-size: 20px;
-	color: #f97068;
-	margin: 10px 0px;
-	padding: 15px 0px;
+	color: #3e6990;
+    margin: 10px 0px;
+    padding: 15px 0px;
+    font-weight: 500;
 	border-bottom: 1px solid #ddd;
+}	
+
+.quote:nth-of-type(even) {
+	color: #f17c56;
 }	
 	
 /* Make it move! */
@@ -394,7 +414,7 @@ ul.menu li a:hover, ul.menu li.active_menu a {
 /* =============== Default styles ========================= 
    ========================================================*/
 .content_wrapper {
-	background: #fff;
+	background: #FFF;
 	border-radius: 20px;
 	width: 100%;
 	height: auto;
@@ -404,6 +424,7 @@ ul.menu li a:hover, ul.menu li.active_menu a {
 	opacity: 0;
 }
 
+/*
 h1 {
 	font-size: 80px;
     line-height: normal;
@@ -447,8 +468,73 @@ h4 {
     margin-top: 0px;
     margin-bottom: 10px;
 }
+*/
+h1 {
+	font-size: 80px;
+    line-height: normal;
+	color: #5c4d8a;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Montez', cursive;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: normal;
+    font-family: 'Sacramento', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 700;
+    color: #f17c56;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3 {
+	font-size: 26px;
+	line-height: normal;
+	font-family: 'Sacramento', cursive;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	color: #8d9951;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: normal;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 600;
+	color: #3e6990;
+	color: #545454;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
 /* =============== Media Queries ========================= 
    ========================================================*/
+@media only screen and (min-width: 1250px){
+
+/*
+	html {
+		scroll-snap-type: mandatory;
+		scroll-snap-points-y: repeat(100vh);
+		scroll-snap-type: y mandatory;
+		scroll-padding: 50px;
+	}
+
+	section {
+		padding: 0 0 0 0;
+		height: 100vh;
+		scroll-snap-align: start;
+		position: relative;
+	}
+*/
+	
+}
+
 @media only screen and (max-width: 1200px){
 
 }
