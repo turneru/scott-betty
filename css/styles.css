@@ -313,11 +313,11 @@ ul.menu li a:hover, ul.menu li.active_menu a {
   background: #5c4d8a;
 }
 
-.timeline ul li::after {
+.timeline ul li::before {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 0;
+  top: 25px;
   transform: translateX(-50%);
   width: 30px;
   height: 30px;
@@ -328,16 +328,16 @@ ul.menu li a:hover, ul.menu li.active_menu a {
 
 .timeline ul li div {
   position: relative;
-  bottom: 0;
+  top: 0;
   width: 520px;
-  padding: 15px 10px;
-  background: rgb(243 155 109 / 50%);
+  padding: 12px 10px;
+  background: rgb(243 155 109 / 40%);
 }
 
-.timeline ul li div::before {
+.timeline ul li div::after {
   content: "";
   position: absolute;
-  bottom: 7px;
+  top: 8px;
   width: 0;
   height: 0;
   border-style: solid;
@@ -347,10 +347,10 @@ ul.menu li a:hover, ul.menu li.active_menu a {
   left: 40px;
 }
 
-.timeline ul li:nth-child(odd) div::before {
+.timeline ul li:nth-child(odd) div::after {
   left: -16px;
   border-width: 8px 16px 8px 0;
-  border-color: transparent rgb(243 155 109 / 50%) transparent transparent;
+  border-color: transparent rgb(243 155 109 / 40%) transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
@@ -358,10 +358,10 @@ ul.menu li a:hover, ul.menu li.active_menu a {
   width: 555px;
 }
 
-.timeline ul li:nth-child(even) div::before {
+.timeline ul li:nth-child(even) div::after {
   right: -16px;
   border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent rgb(243 155 109 / 50%);
+  border-color: transparent transparent transparent rgb(243 155 109 / 40%);
 }
 
 time {
@@ -375,11 +375,11 @@ time {
 /* EFFECTS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.timeline ul li::after {
+.timeline ul li::before {
   transition: background 0.5s ease-in-out;
 }
 
-.timeline ul li.in-view::after {
+.timeline ul li.in-view::before {
   background: #f39b6d;
 }
 
@@ -434,56 +434,17 @@ time {
 		left: 35px;
 	}	
 	
-	.timeline ul li:nth-child(even) div::before {
+	.timeline ul li:nth-child(even) div::after {
 	  left: -16px;
 	  border-width: 8px 16px 8px 0;
 	  border-color: transparent rgb(243 155 109 / 50%) transparent transparent;
 	}
+	
 }
 
 
 /* EXTRA/CLIP PATH STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-.timeline-clippy ul li::after {
-  width: 40px;
-  height: 40px;
-  border-radius: 0;
-}
-
-.timeline-rhombus ul li::after {
-  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-}
-
-.timeline-rhombus ul li div::before {
-  bottom: 12px;
-}
-
-.timeline-star ul li::after {
-  clip-path: polygon(
-    50% 0%,
-    61% 35%,
-    98% 35%,
-    68% 57%,
-    79% 91%,
-    50% 70%,
-    21% 91%,
-    32% 57%,
-    2% 35%,
-    39% 35%
-  );
-}
-
-.timeline-heptagon ul li::after {
-  clip-path: polygon(
-    50% 0%,
-    90% 20%,
-    100% 60%,
-    75% 100%,
-    25% 100%,
-    0% 60%,
-    10% 20%
-  );
-}
 
 .timeline-infinite ul li::after {
   animation: scaleAnimation 2s infinite;
@@ -775,7 +736,6 @@ time {
     top: 0;
     position: relative;
     box-sizing: border-box;
-/*    animation: marquee 25s linear infinite;*/
 }
 
 #messages_wrapper.active_section .marquee {
@@ -830,51 +790,6 @@ time {
 	opacity: 0;
 }
 
-/*
-h1 {
-	font-size: 80px;
-    line-height: normal;
-    color: #3e6990;
-	color: #5c4d8a;
-    font-family: 'Rubik', sans-serif;
-    font-family: 'Sacramento', cursive;
-    font-family: 'Montez', cursive;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-h2 {
-    font-size: 30px;
-    line-height: normal;
-    font-family: 'Sacramento', cursive;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-    color: #F39B6D;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-h3 {
-	font-size: 26px;
-    line-height: normal;
-    font-family: 'Sacramento', cursive;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 500;
-    color: #acb998;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-
-h4 {
-	font-size: 20px;
-    line-height: normal;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 600;
-    color: #545454;
-    margin-top: 0px;
-    margin-bottom: 10px;
-}
-*/
 h1 {
 	font-size: 80px;
     line-height: normal;
@@ -1176,7 +1091,7 @@ h4 {
 		transition: none;
 	}
 	
-	.timeline ul li::after {
+	.timeline ul li::before {
 		transition: none;
 		background: #f39b6d;
 	}

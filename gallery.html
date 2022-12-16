@@ -287,30 +287,30 @@
 <script>
 			
 			
-		$(document).ready(function() {		
-			$(".scroll").click(function(event){
-				event.preventDefault();
-
-					var dest=0;
-
-					if ($(this.hash).offset().top > $(document).height()-$(window).height()) {
-						dest=$(document).height()-$(window).height();
-					}
-
-					else {
-						
-						if ($(this).hasClass("underline")) {
-								$("ul.menu li").removeClass("active_menu");
-								$(this).parent().addClass("active_menu");
-							}
-						
-						dest=$(this.hash).offset().top - 20;
-						
-					}
-					//go to destination
-					$('html,body').animate({scrollTop:dest}, 20,'linear');
-			}); 
-		});
+//		$(document).ready(function() {		
+//			$(".scroll").click(function(event){
+//				event.preventDefault();
+//
+//					var dest=0;
+//
+//					if ($(this.hash).offset().top > $(document).height()-$(window).height()) {
+//						dest=$(document).height()-$(window).height();
+//					}
+//
+//					else {
+//						
+//						if ($(this).hasClass("underline")) {
+//								$("ul.menu li").removeClass("active_menu");
+//								$(this).parent().addClass("active_menu");
+//							}
+//						
+//						dest=$(this.hash).offset().top - 20;
+//						
+//					}
+//					//go to destination
+//					$('html,body').animate({scrollTop:dest}, 20,'linear');
+//			}); 
+//		});
 			
 		function isIntoView(elem) {
 			var documentViewTop = $(window).scrollTop();

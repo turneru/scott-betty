@@ -27,11 +27,6 @@
         <header>
             <nav class="top">
             	<div class="row no-margin">
-<!--
-            	    <div class="three columns desktop">
-						&nbsp;
-            	    </div>
--->
             	    <div class="twelve columns">
             	        <ul class="menu">
 							<li><a class="underline scroll fade-in-top delay1000" href="#intro_wrapper">Home</a></li>
@@ -73,15 +68,14 @@
                         <div class="twelve columns">
 							<div class="intro_container">
 								<div>
-									<h1 class="fade-in-top delay300">Scott <span>&amp;</span> Betty's</h1>
-									<h2 class="fade-in-top delay500">50th Wedding Anniversary</h2><br />
-									<h4 class="fade-in-top delay800 center">Celebrating 50 years of blissfull marriage.</h4>
-									<h4 class="fade-in-top delay900 center">Join us in Phoenix as we commemorate the occasion!</h4>
+									<h1 class="fade-in delay300">Scott <span>&amp;</span> Betty's</h1>
+									<h2 class="fade-in delay500">50th Wedding Anniversary</h2><br />
+									<h4 class="fade-in delay800 center">Celebrating 50 years of blissfull marriage.</h4>
+									<h4 class="fade-in delay800 center">Join us in Phoenix as we commemorate the occasion!</h4>
 								</div>
-
 								<div class="row no-margin">
 									<div class="twelve columns center intro_arrow fade-in-bottom delay2000">
-									   <a href="#phoenix_wrapper" class="scroll"><img src="images/down_arrow.png" class="heartbeat"/></a>
+									   <a href="#phoenix_wrapper" class="scroll"><img src="images/down_arrow.png" alt="down arrow" class="heartbeat"/></a>
 									</div>
 								</div>
 							</div>
@@ -470,9 +464,7 @@
 											<div><img src="images/photos/B6Done40.jpg" class="img-responsive" alt="" /></div>
 											<div><img src="images/photos/B6Done41.jpg" class="img-responsive" alt="" /></div>
 											<div><img src="images/photos/B6Done42.jpg" class="img-responsive" alt="" /></div>
-
 										</div>
-
 									</div>
 									<div class="col-md-2 desktop">&nbsp;</div>
 								</div>
@@ -492,7 +484,6 @@
                         <div class="twelve columns">
 							<div class="content_wrapper center">
 								<h1>Messages</h1>
-
 								<div class="message_container">
 									<div class="marquee">
 
@@ -616,7 +607,7 @@
 						$("#roadtrip_wrapper .content_wrapper").addClass("fade-in-bottom");
 					}
 					
-					else if (isIntoView($("#ourstory_wrapper .nav_anchor"))){
+					else if (isIntoView($("#ourstory_wrapper h1"))){
 						$("#phoenix_wrapper, #photos_wrapper, #messages_wrapper, #intro_wrapper, #roadtrip_wrapper").removeClass("active_section");
 						$("#ourstory_wrapper").addClass("active_section");
 						$("ul.menu li:nth-of-type(1), ul.menu li:nth-of-type(2), ul.menu li:nth-of-type(3), ul.menu li:nth-of-type(5), ul.menu li:nth-of-type(6)").removeClass("active_menu");
@@ -634,7 +625,7 @@
 					else if (isIntoView($("#photos_wrapper"))){
 						$("#phoenix_wrapper, #roadtrip_wrapper, #messages_wrapper, #intro_wrapper, #ourstory_wrapper").removeClass("active_section");
 						$("#photos_wrapper").addClass("active_section");
-						$("ul.menu li:nth-of-type(1), ul.menu li:nth-of-type(2), ul.menu li:nth-of-type(3), ul.menu li:nth-of-type(5), ul.menu li:nth-of-type(6)").removeClass("active_menu");
+						$("ul.menu li:nth-of-type(1), ul.menu li:nth-of-type(2), ul.menu li:nth-of-type(3), ul.menu li:nth-of-type(4), ul.menu li:nth-of-type(6)").removeClass("active_menu");
 						$("ul.menu li:nth-of-type(5)").addClass("active_menu");
 						$("#photos_wrapper .content_wrapper").addClass("fade-in-bottom");
 						
@@ -648,12 +639,6 @@
 						$("ul.menu li:nth-of-type(6)").addClass("active_menu");
 						$("#messages_wrapper .content_wrapper").addClass("fade-in-bottom");
 					} 
-
-//					else if (isIntoView($("#contact_wrapper"))){
-//						$("#phoenix_wrapper, #roadtrip_wrapper, #photos_wrapper, #intro_wrapper, #messages_wrapper").removeClass("active_section");
-//						$("#contact_wrapper").addClass("active_section");
-//						$("ul.menu li").removeClass("active_menu");
-//					}  
 				});		
 			}	
 		});
