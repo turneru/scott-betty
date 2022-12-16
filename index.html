@@ -558,7 +558,12 @@
 			}); 
 		});
 		
-			
+		function removeHash () { 
+					history.pushState("", document.title, window.location.pathname);
+					//history.pushState("", document.title, window.location.pathname + window.location.search);
+				}
+				
+				removeHash();	
 			
 		$(function() {
 			$(window).load(function() {
