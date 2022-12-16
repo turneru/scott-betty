@@ -562,12 +562,18 @@
 			
 		$(function() {
 			$(window).load(function() {
+				function removeHash () { 
+					history.pushState("", document.title, window.location.pathname + window.location.search);
+				}
+				
+				removeHash();
+				
 				if (location.hash){
 					function removeHash () { 
 						history.pushState("", document.title, window.location.pathname + window.location.search);
 					}
 					
-					removeHash ();
+					removeHash();
 					
 					$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
 				};
