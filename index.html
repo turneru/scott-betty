@@ -558,15 +558,18 @@
 			}); 
 		});
 		
-		function removeHash () { 
-			history.pushState("", document.title, window.location.pathname + window.location.search);
-		}	
+			
 			
 		$(function() {
 			$(window).load(function() {
 				if (location.hash){
-					$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
+					function removeHash () { 
+						history.pushState("", document.title, window.location.pathname + window.location.search);
+					}
+					
 					removeHash ();
+					
+					$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
 				};
 			});
 		});  	
