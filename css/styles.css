@@ -408,30 +408,37 @@ time {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 @media screen and (max-width: 900px) {
-  .timeline ul li div {
-    width: 250px;
-  }
-  .timeline ul li:nth-child(even) div {
-    left: -289px;
-    /*250+45-6*/
-  }
+	.timeline ul li div {
+	  width: 250px !important;
+	}
+	.timeline ul li:nth-child(even) div {
+	  left: -289px;
+	  /*250+45-6*/
+	}
 }
 
 @media screen and (max-width: 600px) {
-  .timeline ul li {
-    margin-left: 20px;
-  }
-  .timeline ul li div {
-    width: calc(100vw - 91px);
-  }
-  .timeline ul li:nth-child(even) div {
-    left: 45px;
-  }
-  .timeline ul li:nth-child(even) div::before {
-    left: -15px;
-    border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
-  }
+	.timeline ul li {
+	  margin-left: -45px;
+	}
+	
+	.timeline ul li div {
+	  width: calc(100vw - 110px) !important;
+	}
+	
+	.timeline ul li:nth-child(even) div {
+	  left: 35px;
+	}
+	
+	.timeline ul li:nth-child(odd) div {
+		left: 35px;
+	}	
+	
+	.timeline ul li:nth-child(even) div::before {
+	  left: -16px;
+	  border-width: 8px 16px 8px 0;
+	  border-color: transparent rgb(243 155 109 / 50%) transparent transparent;
+	}
 }
 
 
@@ -1059,22 +1066,6 @@ h4 {
    ========================================================*/
 @media only screen and (min-width: 1250px){
 
-/*
-	html {
-		scroll-snap-type: mandatory;
-		scroll-snap-points-y: repeat(100vh);
-		scroll-snap-type: y mandatory;
-		scroll-padding: 50px;
-	}
-
-	section {
-		padding: 0 0 0 0;
-		height: 100vh;
-		scroll-snap-align: start;
-		position: relative;
-	}
-*/
-	
 }
 
 @media only screen and (max-width: 1200px){
@@ -1094,6 +1085,7 @@ h4 {
 
 	.nav-panel-mobile {
 		display: block;
+		background: #fff;
 	}
 	
 	.desktop, ul.menu {
@@ -1168,6 +1160,25 @@ h4 {
 	
 	#messages_wrapper .marquee {
 		animation: marquee 25s linear infinite;
+	}
+	
+	.timeline ul li:nth-child(odd) div {
+		transform: none;
+	}
+	
+	.timeline ul li:nth-child(even) div {
+		transform: none;
+	}
+	
+	.timeline ul li div {
+		visibility: visible;
+		opacity: 1;
+		transition: none;
+	}
+	
+	.timeline ul li::after {
+		transition: none;
+		background: #f39b6d;
 	}
 	
 }

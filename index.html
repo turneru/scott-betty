@@ -538,7 +538,6 @@
 			infinite: true,
 			slidesToShow: 1,
 			slidesToScroll: 1,
-			//adaptiveHeight: true
 			autoplay: true,
   			autoplaySpeed: 7000
 		});	
@@ -623,6 +622,13 @@
 						$("ul.menu li:nth-of-type(1), ul.menu li:nth-of-type(2), ul.menu li:nth-of-type(3), ul.menu li:nth-of-type(5), ul.menu li:nth-of-type(6)").removeClass("active_menu");
 						$("ul.menu li:nth-of-type(4)").addClass("active_menu");
 						$("#ourstory_wrapper .content_wrapper").addClass("fade-in-bottom");
+						$(window).scroll(function() {
+							$('.timeline li').each(function () {
+								if (isIntoView($(this))){
+									$(this).addClass('in-view');
+								}
+							});						
+						});
 					}
 
 					else if (isIntoView($("#photos_wrapper"))){
@@ -631,6 +637,8 @@
 						$("ul.menu li:nth-of-type(1), ul.menu li:nth-of-type(2), ul.menu li:nth-of-type(3), ul.menu li:nth-of-type(5), ul.menu li:nth-of-type(6)").removeClass("active_menu");
 						$("ul.menu li:nth-of-type(5)").addClass("active_menu");
 						$("#photos_wrapper .content_wrapper").addClass("fade-in-bottom");
+						
+
 					} 
 
 					else if (isIntoView($("#messages_wrapper"))){
@@ -664,38 +672,38 @@
 		});		
 			
 			
-		(function () {
-		  "use strict";
+//		(function () {
+//		  "use strict";
 
 		  // define variables
-		  var items = document.querySelectorAll(".timeline li");
+//		  var items = document.querySelectorAll(".timeline li");
 
 		  // check if an element is in viewport
 		  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-		  function isElementInViewport(el) {
-			var rect = el.getBoundingClientRect();
-			return (
-			  rect.top >= 0 &&
-			  rect.left >= 0 &&
-			  rect.bottom <=
-				(window.innerHeight || document.documentElement.clientHeight) &&
-			  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-			);
-		  }
-
-		  function callbackFunc() {
-			for (var i = 0; i < items.length; i++) {
-			  if (isElementInViewport(items[i])) {
-				items[i].classList.add("in-view");
-			  }
-			}
-		  }
+//		  function isElementInViewport(el) {
+//			var rect = el.getBoundingClientRect();
+//			return (
+//			  rect.top >= 0 &&
+//			  rect.left >= 0 &&
+//			  rect.bottom <=
+//				(window.innerHeight || document.documentElement.clientHeight) &&
+//			  rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//			);
+//		  }
+//
+//		  function callbackFunc() {
+//			for (var i = 0; i < items.length; i++) {
+//			  if (isElementInViewport(items[i])) {
+//				items[i].classList.add("in-view");
+//			  }
+//			}
+//		  }
 
 		  // listen for events
-		  window.addEventListener("load", callbackFunc);
-		  window.addEventListener("resize", callbackFunc);
-		  window.addEventListener("scroll", callbackFunc);
-		})();
+//		  window.addEventListener("load", callbackFunc);
+//		  window.addEventListener("resize", callbackFunc);
+//		  window.addEventListener("scroll", callbackFunc);
+//		})();
 
 		</script>	
     </body>
