@@ -557,6 +557,19 @@
 					$('html,body').animate({scrollTop:dest}, 20,'linear');
 			}); 
 		});
+		
+		function removeHash () { 
+			history.pushState("", document.title, window.location.pathname + window.location.search);
+		}	
+			
+		$(function() {
+			$(window).load(function() {
+				if (location.hash){
+					$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
+					removeHash ();
+				};
+			});
+		});  	
 			
 		function isIntoView(elem) {
 			var documentViewTop = $(window).scrollTop();

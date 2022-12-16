@@ -294,8 +294,8 @@ ul.menu li a:hover, ul.menu li.active_menu a {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul {
-  background: #fff;
-  padding: 50px 0;
+	background: #fff;
+	padding: 50px 0;
 }
 
 .timeline ul li p {
@@ -305,70 +305,71 @@ ul.menu li a:hover, ul.menu li.active_menu a {
 }
 
 .timeline ul li {
-  list-style-type: none;
-  position: relative;
-  width: 6px;
-  margin: 0 auto;
-  padding-top: 25px;
-  background: #5c4d8a;
+	list-style-type: none;
+	position: relative;
+	width: 6px;
+	margin: 0 auto;
+	padding-top: 25px;
+	background: #5c4d8a;
 }
 
 .timeline ul li::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 25px;
-  transform: translateX(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: inherit;
-  z-index: 1;
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 25px;
+	transform: translateX(-50%);
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: inherit;
+	z-index: 1;
 }
 
 .timeline ul li div {
-  position: relative;
-  top: 0;
-  width: 520px;
-  padding: 12px 10px;
-  background: rgb(243 155 109 / 40%);
+	position: relative;
+	top: 0;
+	width: 520px;
+	padding: 12px 10px;
+	background: rgb(243 155 109 / 40%);
+	border-radius: 10px;
 }
 
 .timeline ul li div::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  width: 0;
-  height: 0;
-  border-style: solid;
+	content: "";
+	position: absolute;
+	top: 8px;
+	width: 0;
+	height: 0;
+	border-style: solid;
 }
 
 .timeline ul li:nth-child(odd) div {
-  left: 40px;
+	left: 40px;
 }
 
 .timeline ul li:nth-child(odd) div::after {
-  left: -16px;
-  border-width: 8px 16px 8px 0;
-  border-color: transparent rgb(243 155 109 / 40%) transparent transparent;
+	left: -16px;
+	border-width: 8px 16px 8px 0;
+	border-color: transparent rgb(243 155 109 / 40%) transparent transparent;
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -590px;
-  width: 555px;
+	left: -590px;
+	width: 555px;
 }
 
 .timeline ul li:nth-child(even) div::after {
-  right: -16px;
-  border-width: 8px 0 8px 16px;
-  border-color: transparent transparent transparent rgb(243 155 109 / 40%);
+	right: -16px;
+	border-width: 8px 0 8px 16px;
+	border-color: transparent transparent transparent rgb(243 155 109 / 40%);
 }
 
 time {
-  display: block;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-bottom: 8px;
+	display: block;
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin-bottom: 8px;
 }
 
 
@@ -376,31 +377,31 @@ time {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline ul li::before {
-  transition: background 0.5s ease-in-out;
+ 	transition: background 0.5s ease-in-out;
 }
 
 .timeline ul li.in-view::before {
-  background: #f39b6d;
+ 	background: #f39b6d;
 }
 
 .timeline ul li div {
-  visibility: hidden;
-  opacity: 0;
-  transition: all 0.5s ease-in-out;
+ 	visibility: hidden;
+ 	opacity: 0;
+ 	transition: all 0.5s ease-in-out;
 }
 
 .timeline ul li:nth-child(odd) div {
-  transform: translate3d(200px, 0, 0);
+ 	transform: translate3d(200px, 0, 0);
 }
 
 .timeline ul li:nth-child(even) div {
-  transform: translate3d(-200px, 0, 0);
+ 	transform: translate3d(-200px, 0, 0);
 }
 
 .timeline ul li.in-view div {
-  transform: none;
-  visibility: visible;
-  opacity: 1;
+ 	transform: none;
+ 	visibility: visible;
+ 	opacity: 1;
 }
 
 
@@ -409,25 +410,25 @@ time {
 
 @media screen and (max-width: 900px) {
 	.timeline ul li div {
-	  width: 250px !important;
+		width: 250px !important;
 	}
 	.timeline ul li:nth-child(even) div {
-	  left: -289px;
-	  /*250+45-6*/
+		left: -289px;
+		/*250+45-6*/
 	}
 }
 
 @media screen and (max-width: 600px) {
 	.timeline ul li {
-	  margin-left: -45px;
+		margin-left: -45px;
 	}
 	
 	.timeline ul li div {
-	  width: calc(100vw - 110px) !important;
+		width: calc(100vw - 110px) !important;
 	}
 	
 	.timeline ul li:nth-child(even) div {
-	  left: 35px;
+		left: 35px;
 	}
 	
 	.timeline ul li:nth-child(odd) div {
@@ -435,9 +436,9 @@ time {
 	}	
 	
 	.timeline ul li:nth-child(even) div::after {
-	  left: -16px;
-	  border-width: 8px 16px 8px 0;
-	  border-color: transparent rgb(243 155 109 / 50%) transparent transparent;
+		left: -16px;
+		border-width: 8px 16px 8px 0;
+		border-color: transparent rgb(243 155 109 / 50%) transparent transparent;
 	}
 	
 }
@@ -447,7 +448,7 @@ time {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .timeline-infinite ul li::after {
-  animation: scaleAnimation 2s infinite;
+	animation: scaleAnimation 2s infinite;
 }
 
 @keyframes scaleAnimation {
