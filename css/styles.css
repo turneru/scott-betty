@@ -262,10 +262,6 @@ ul.menu li a:hover, ul.menu li.active_menu a {
     padding: 100px 0px 25px;
     min-height: calc(100vh + 50px);
     background: #F97068;
-/*
-	background: url(../images/cacti.jpg) no-repeat top center;
-    background-size: cover;
-*/
 	background: url(../images/sparks.jpg?v=1);
     background-size: cover;
     background-position: center;
@@ -630,9 +626,9 @@ time {
 	pointer-events: none;
 	position: absolute;
 	transform-origin: left top;
-	top: 50%;
-	left: 50%;
-	max-height: 100vh;
+	top: 53%;
+    left: 50%;
+    max-height: 725px;
 	max-width: 100%;
 	visibility: hidden;
 	will-change: visibility;
@@ -725,6 +721,19 @@ time {
 }
 .m-p-g__btn:hover {
 	background: rgba(255, 255, 255, 0.15);
+}
+
+/* =============== Gallery styles ========================= 
+   ========================================================*/
+#gallery_wrapper {
+    width: 100%;
+    min-height: calc(100vh + 50px);
+    padding: 100px 0px 25px;
+    background-color: #F39B6D; 
+}
+
+#gallery_wrapper .content_wrapper {
+	opacity: 1;
 }
 
 /* =============== Messages styles ========================= 
@@ -995,6 +1004,9 @@ h4 {
 .nav-panel-mobile .overlay.open li:nth-of-type(5) {
   	animation-delay: .75s;
 }
+.nav-panel-mobile .overlay.open li:nth-of-type(6) {
+  	animation-delay: .85s;
+}
 
 .nav-panel-mobile .overlay nav {
 	position: relative;
@@ -1084,7 +1096,7 @@ h4 {
 		display: block;
 	}
 	
-	.desktop, .menu {
+	.desktop, ul.menu {
 		display: none;
 	}
 	
@@ -1148,6 +1160,10 @@ h4 {
 	
 	.photo_rotator .slick-next, .photo_rotator .slick-next:hover {
 		right: 0;
+	}
+	
+	.m-p-g.desktop {
+		display: block;
 	}
 	
 	#messages_wrapper .marquee {
