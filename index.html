@@ -565,21 +565,17 @@
 			$(document).ready(function() {
 				
 				$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
-				function removeHash () { 
-					history.pushState("", document.title, window.location.pathname);
-					//history.pushState("", document.title, window.location.pathname + window.location.search);
-				}
-				removeHash();
+				console.log("outside if location hash statement");
+				history.pushState("", document.title, window.location.pathname);
+				console.log("outside if location hash statement, history push complete");
 				
 				if (location.hash){
 					$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
-					function removeHash () { 
-						history.pushState("", document.title, window.location.pathname);
-						//history.pushState("", document.title, window.location.pathname + window.location.search);
-					}
-					removeHash();
-					
-					
+					console.log("inside if location hash statement");
+					history.pushState("", document.title, window.location.pathname);
+					console.log("inside if location hash statement, history push complete");
+					//history.pushState("", document.title, window.location.pathname + window.location.search);
+
 				};
 			});
 		});  	
