@@ -558,27 +558,24 @@
 			}); 
 		});
 		
+			
 		function removeHash () { 
 					history.pushState("", document.title, window.location.pathname);
 					//history.pushState("", document.title, window.location.pathname + window.location.search);
-				}
-				
-				removeHash();	
-			
+				}	
+
 		$(function() {
 			$(window).load(function() {
-				function removeHash () { 
-					history.pushState("", document.title, window.location.pathname);
-					//history.pushState("", document.title, window.location.pathname + window.location.search);
-				}
+				
+				$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
 				
 				removeHash();
 				
 				if (location.hash){
-					
+					$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
 					removeHash();
 					
-					$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
+					
 				};
 			});
 		});  	
