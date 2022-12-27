@@ -13,7 +13,7 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css2?family=family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/skeleton.css">
@@ -45,12 +45,12 @@
 							<div class="overlay" id="overlay">
 								<nav class="overlay-menu">
 									<ul id="myMenu" class="navbar-nav">
-										<li><a class="underline scroll fade-in-top delay800" href="#intro_wrapper">Home</a></li>
-										<li><a class="underline scroll fade-in-top delay900" href="#phoenix_wrapper">Celebration</a></li>
-										<li><a class="underline scroll fade-in-top delay1000" href="#roadtrip_wrapper">Road Trip</a></li>
-										<li><a class="underline scroll fade-in-top delay1100" href="#ourstory_wrapper">Our Story</a></li>
-										<li><a class="underline scroll fade-in-top delay1200" href="#photos_wrapper">Photos</a></li>
-										<li><a class="underline scroll fade-in-top delay1300" href="#messages_wrapper">Messages</a></li>
+										<li><a class="underline scroll delay800" href="#intro_wrapper">Home</a></li>
+										<li><a class="underline scroll delay900" href="#phoenix_wrapper">Celebration</a></li>
+										<li><a class="underline scroll delay1000" href="#roadtrip_wrapper">Road Trip</a></li>
+										<li><a class="underline scroll delay1100" href="#ourstory_wrapper">Our Story</a></li>
+										<li><a class="underline scroll delay1200" href="#photos_wrapper">Photos</a></li>
+										<li><a class="underline scroll delay1300" href="#messages_wrapper">Messages</a></li>
 									</ul>
 								</nav>
 							</div>
@@ -69,9 +69,11 @@
 							<div class="intro_container">
 								<div>
 									<h1 class="fade-in delay300">Scott <span>&amp;</span> Betty's</h1>
-									<h2 class="fade-in delay500">50th Wedding Anniversary</h2><br />
+									<h2 class="fade-in delay500">50th Wedding Anniversary</h2>
+									<h3 class="fade-in delay700 center">The Ehrets are still together and going strong!</h3><br />
 									<h4 class="fade-in delay800 center">Celebrating 50 years of blissfull marriage.</h4>
 									<h4 class="fade-in delay800 center">Join us in Phoenix as we commemorate the occasion!</h4>
+									<h4 class="fade-in delay800 center">Or, check the Road Trip Map – we hope to renew lots of friendships!</h4>
 								</div>
 								<div class="row no-margin">
 									<div class="twelve columns center intro_arrow fade-in-bottom delay2000">
@@ -89,7 +91,8 @@
                 <div class="container">
                     <div class="row">
 						<div class="twelve columns">
-							<div class="content_wrapper center">
+							<div class="content_wrapper center">						
+								
 								<h1>Phoenix Area Celebration</h1>
 								
 								<h2>Saturday, May 20, 2023</h2>
@@ -98,11 +101,22 @@
 								
 								<h2>Tuscany Falls Clubhouse - Chianti Room</h2>
 								<h3>16262 Clubhouse Dr, Goodyear, AZ 85395</h3>
-								<p><em>Enter Pebble Creek off PebbleCreek Parkway through guard gate.</em></p>
+<!--								<p><em>Enter Pebble Creek off PebbleCreek Parkway through guard gate.</em></p>-->
 								
-								<p><a href="https://forms.gle/mcywfNkACU1Y2AmJ9" target="_blank" class="button">RSVP</a><br><br></p>
-								
-								<h4><br />Can't make it but still want to give a toast?</h4>
+								<p><a href="https://forms.gle/mcywfNkACU1Y2AmJ9" target="_blank" class="button" style="min-width: 215px;">RSVP</a>&nbsp;&nbsp;<a id="DirectionsBtn" class="button" style="min-width: 215px;">Directions</a><br><br></p>
+
+								<div id="DirectionsPopup" class="modal">
+								  <div class="modal-content">
+									<span class="close">&times;</span>
+									  <h4 class="center">Directions</h4>
+									<p style="padding-top: 15px;">The Clubhouse is north of I-10 or south of Indian School Road, and west of Pebble Creek Parkway.</p>
+									<p><strong>From I-10:</strong> Exit 126, then north on Pebble Creek Parkway about 1.75 miles; west on Clubhouse Drive.</p>
+									<p><strong>From Indian School:</strong> South on Pebble creek Parkway about one-quarter mile; west on Clubhouse Drive.</p>
+									<p><strong>Once on Clubhouse drive:</strong> Stop at guard gate for parking pass; continue west, to four-way stop sign; turn north (east); pass tennis courts and Fitness Center; maneuver left to first large building and enter through recessed double doors.</p>
+								  </div>
+								</div>
+
+								<h4><br />Can't make it but still want to offer a toast?</h4>
 								<p>Use the form below to upload a toast and we'll read or play it during the celebration!</p>
 								
 								<p><a href="https://forms.gle/C32sX3D5o4Gqcgkp7" target="_blank" class="button">Upload a Toast</a></p>
@@ -119,7 +133,7 @@
                         <div class="twelve columns">
 							<div class="content_wrapper center">
 								<h1>Road Trip</h1>
-								<p>Beginning in late May we will be driving cross-country to visit people and places we love.<br />Below is a map with the potential stops during our adventure.<br />We plan to go counter-clockwise (East) starting with Tuscon, El Paso, and Austin.</p>
+								<p>Beginning in late May we will be driving cross-country to visit people and places we love. Below is a map with the potential stops during our adventure. We plan to go counter-clockwise (East) starting with Tucson, El Paso, Austin, then all the way around the country for about 10 weeks – with many stops and the actual schedule to be announced. We might go ANYWHERE!</p>
 								
 								<h4>Would you like to see us as we're passing through on our road trip?</h4>
 								<p>Fill out the form below, and we'll let you know if our route takes us near your location!</p>
@@ -141,7 +155,8 @@
                     <div class="row">
                         <div class="twelve columns">
 							<div class="content_wrapper center">
-								<h1>The Scott and Betty Ehret Story</h1>
+								<h1 class="desktop">The Scott and Betty Ehret Story</h1>
+								<h1 class="mobile">Our Story</h1>
 								<h2>Timeline of a Romance</h2>
 								<section class="timeline">
 								  <ul>
@@ -158,7 +173,7 @@
 									</li>
 									<li>
 									  <div>
-										<time>December 1971</time> <p>On December 23, 1971, Scott proposed while visiting Betty's family for Christmas in Wyanet, Illinois. He was quite the jokester, hiding the ring inside a pool stick bag. The two played pool and snooker in the WIU Union, where Scott worked.</p>
+										<time>December 1971</time> <p>On December 23, 1971, Scott proposed while visiting Betty's family for Christmas in Wyanet, IL. He was quite the jokester, hiding the ring inside a pool stick bag. The two played pool and snooker in the WIU Union, where Scott worked.</p>
 									  </div>
 									</li>
 									<li>
@@ -168,7 +183,7 @@
 									</li>
 									<li>
 									  <div>
-										<time>Basic Training 1972</time> <p>Scott traveled to Fort Polk, Louisiana, for Basic Training. It's a place known to many as "the armpit of the nation," and to Army basic trainees by a somewhat lower anatomical reference. (The "moving floor" is a minimum two-beer story.)</p>
+										<time>Basic Training 1972</time> <p>Scott traveled to Fort Polk, LA, for Basic Training. It's a place known to many as "the armpit of the nation," and to Army basic trainees by a somewhat lower anatomical reference. (The "moving floor" is a minimum two-beer story.)</p>
 										<p>He left his Opal GT with Betty. (There's another two-beer story about Scott's friend Jeff borrowing the car.) During Betty's second year of college, she enjoyed the role of floor Resident Advisor. Then her Junior year, she was named the Assistant Head Resident of Grote Hall. But Grote closed. Betty was reassigned to Washington Hall, where she shared the duties with another Assistant.</p>
 									  </div>
 									</li>
@@ -190,7 +205,7 @@
 									  <div>
 										<time>1974-1976</time> <p>Scott, Betty and Christopher lived in Macomb, first in married student housing (two different apartments) and then just off campus in a townhome in River Run. Scott graduated in May 1976 and was commissioned a 2Lt. Yeah, Betty has stories about enlisted &amp; commissioned, just like on Army Wives. He first traveled to Fort Knox, KY for summer duty. (There's at least one beer in there.) Betty and Chris visited for a short vacation with Betty's parents, Dick and Elaine Olds. Meanwhile, Betty continued working as a Periodicals Clerk in the WIU campus library.</p>
 										 <p> In the fall, Scott, Betty and Chris moved to the Army's Aberdeen Proving Grounds in Maryland for his Ordnance Officer Basic Course. That Christmas Aunt Debbie and Grandma Dorothy (Scott's sister and Mom) visited just as Scott's training ended.</p>
-										  <p>In retrospect, "careful preparation" became a problem. On orders to transfer to Ft. Bliss, Texas, Scott and Betty's HUGE tactical error occurred when the family was fully packed by mid-January – shortly BEFORE they were invited to President Jimmy Carter's inaugural ball. Well, all the "good clothes and dress uniforms" were already packed so they declined the presidential invitation! They "KNEW" they would have another chance. LOL</p>
+										  <p>In retrospect, "careful preparation" became a problem. On orders to transfer to Ft. Bliss, TX, Scott and Betty's HUGE tactical error occurred when the family was fully packed by mid-January – shortly BEFORE they were invited to President Jimmy Carter's inaugural ball. Well, all the "good clothes and dress uniforms" were already packed so they declined the presidential invitation! They "KNEW" they would have another chance. LOL</p>
 									  </div>
 									</li>
 									<li>
@@ -206,7 +221,7 @@
 										<p>When Chris was in 2nd grade, he decided to no longer use his first name, choosing instead his middle name, Scott. He enjoyed seeing "Scott Ehret" on the TV screen credits after the evening news. Yes, it took some time for Mom &amp; Dad to start calling him Scott, but his friends were appropriately jealous of their "famous" classmate.</p>
 										<p>Scott worked from 1980-1982 at KTSM (NBC), with shifts that included working weekends. Betty remembered a time when he was gone "all day" working on election coverage. That's the day their waterbed leaked. (Another two-wine-glass minimum.)</p>
 										<p>Scott next spent two years as the Media Consultant for the El Paso Electric Company, and even visited Phoenix and the Palo Verde Nuclear Station. (Betty and the boys joined him one weekend – another story about small airplanes.) Then, from 1985-1988, Scott worked for KVIA-TV, the ABC affiliate, in El Paso.</p>
-										<p>The El Paso years included Scott working seven years, part-time, for The Diablos, the AA baseball team in town, and as a high school basketball and football official. It also included stints for both Scott Jr. and Michael as Diablo batboys – and Scott Jr.'s own entry to radio broadcasting. (His stories might revolve more around good Scotch.)</p>
+										<p>The El Paso years included Scott working seven years, part-time, for The Diablos, the AA baseball team in town, and as a high school baseball umpire, and basketball and football official. It also included stints for both Scott Jr. and Michael as Diablo batboys – and Scott Jr.'s own entry to radio broadcasting. (His stories might revolve more around good Scotch.)</p>
 									  </div>
 									</li>
 									<li>
@@ -222,6 +237,7 @@
 										<p>Scott continued officiating all three sports, but soon gave up basketball. He even officiated gymnastics with Betty for a few years. Through his writing, he met many influential sports officials in America and Canada. (Lots of stories to share – might not be enough beer in any refrigerator!)</p>
 										<p>Betty began her Racine career as a sixth-grade teacher in the Racine School District. She received her Master's degree from Carthage College in 1993. Since Betty did not walk in her Undergraduate ceremony, she decided to participate in her Master's Degree Ceremony at Carthage College. Then on weekends, week nights, and during the summer, Betty taught courses for Carthage College, UW-Parkside, and McPherson College. She continued her work with Alpha Delta Kappa, joining Wisconsin's Tau chapter. Her last year in Racine, she taught 2nd grade at Giese Elementary. (A "pick your beverage" story about her first week on campus.)</p>
 										<p>She became an author, writing a Science and Cooperative Learning resource book for teachers. (Is <em>anyone</em> still thirsty?)</p>
+										<p>Meanwhile, Scott spent spring seasons umpiring Division I college baseball, and each fall officiating high school and Division III college football.</p>
 									  </div>
 									</li>
 									<li>
@@ -500,17 +516,17 @@
 								<div class="message_container">
 									<div class="marquee">
 
-										<p class="quote">Here's to another 50 years of being great together!<br /><br /><span class="quote_name">- Emily &amp; Turner </span>Uligian</p>
+										<p class="quote">Here's to another 50 years of being great together!<br /><br />- Sandy Sokalski</p>
 
-										<p class="quote">Still vibin' and still thrivin' right on up to your forever. Happy Anniversary, you two!<br /><br /><span class="quote_name">- Emily &amp; Turner </span>Uligian</p>
+										<p class="quote">Still vibin' and still thrivin' right on up to your forever. Happy Anniversary, you two!<br /><br />- Alex Sokalski</p>
 
-										<p class="quote">Love and much happiness to one of our all-time favorite couples!<br /><br /><span class="quote_name">- Emily &amp; Turner </span>Uligian</p>
+										<p class="quote">Love and much happiness to one of our all-time favorite couples!<br /><br />- Emily &amp; Turner Uligian</p>
 
-										<p class="quote">Warmest wishes to the wonderful two of you on your 50th anniversary.<br /><br /><span class="quote_name">- Emily &amp; Turner </span>Uligian</p>
+										<p class="quote">Warmest wishes to the wonderful two of you on your 50th anniversary.<br /><br />- Henry &amp; Teresa Sokalski</p>
 
-										<p class="quote">Congratulations all over again!<br /><br /><span class="quote_name">- Emily &amp; Turner </span>Uligian</p>
+										<p class="quote">Congratulations all over again!<br /><br />- Jeff &amp; Luanne Uligian</p>
 
-										<p class="quote">Wishing a perfect pair a perfectly happy day.<br /><br /><span class="quote_name">- Emily &amp; Turner </span>Uligian</p>
+										<p class="quote">Wishing a perfect pair a perfectly happy day.<br /><br />- Stan Sokalski</p>
 
 									</div>	
 								</div>
@@ -521,19 +537,6 @@
 					</div>	
                 </div>    
             </div> 
-
-<!--
-			<div id="contact_wrapper">
-                <span class="nav_anchor"><a id="contact"></a></span>
-                <div class="container">
-                    <div class="row">
-                        <div class="twelve columns">
-							Contact info here in footer. Ehret house email. &copy; 2022 - TU 
-						</div>
-					</div>	
-                </div>    
-            </div>  
--->
         </div>
 
 		<script>
@@ -691,6 +694,31 @@
 			});
 		});		
 			
+	// Get the modal
+	var Dmodal = document.getElementById("DirectionsPopup");
+
+	// Get the button that opens the modal
+	var Dbtn = document.getElementById("DirectionsBtn");
+
+	// Get the <span> element that closes the modal
+	var Dspan = document.getElementsByClassName("close")[0];
+
+	// When the user clicks the button, open the modal 
+	Dbtn.onclick = function() {
+	  Dmodal.style.display = "block";
+	}
+
+	// When the user clicks on <span> (x), close the modal
+	Dspan.onclick = function() {
+	  Dmodal.style.display = "none";
+	}
+
+	// When the user clicks anywhere outside of the modal, close it
+	window.onclick = function(event) {
+	  if (event.target == Dmodal) {
+		Dmodal.style.display = "none";
+	  }
+	}
 			
 //		(function () {
 //		  "use strict";
