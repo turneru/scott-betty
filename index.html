@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
+		<meta http-equiv="cache-control" content="no-cache"> 
+		<meta http-equiv="expires" content="0"> 
+		<meta http-equiv="pragma" content="no-cache">
         <title>Scott &amp; Betty's 50th Wedding Anniversary</title>
         
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -646,29 +649,7 @@
 					//go to destination
 					$('html,body').animate({scrollTop:dest}, 20,'linear');
 			}); 
-		});
-		
-			
-			
-
-		$(function() {
-			$(document).ready(function() {
-				
-				$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
-				console.log("outside if location hash statement");
-				history.pushState("", document.title, window.location.pathname);
-				console.log("outside if location hash statement, history push complete");
-				
-				if (location.hash){
-					$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
-					console.log("inside if location hash statement");
-					history.pushState("", document.title, window.location.pathname);
-					console.log("inside if location hash statement, history push complete");
-					//history.pushState("", document.title, window.location.pathname + window.location.search);
-
-				};
-			});
-		});  	
+		}); 	
 			
 		function isIntoView(elem) {
 			var documentViewTop = $(window).scrollTop();
@@ -827,6 +808,25 @@
 //		  window.addEventListener("scroll", callbackFunc);
 //		})();
 
+		//$(function() {
+			$(document).ready(function() {
+				
+				$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
+				console.log("outside if location hash statement");
+				history.pushState("", document.title, window.location.pathname);
+				console.log("outside if location hash statement, history push complete");
+				
+				if (location.hash){
+					$('body').animate({scrollTop: $(location.hash).offset().top}, 'linear');
+					console.log("inside if location hash statement");
+					history.pushState("", document.title, window.location.pathname);
+					console.log("inside if location hash statement, history push complete");
+					//history.pushState("", document.title, window.location.pathname + window.location.search);
+
+				};
+			});
+		//}); 	
+	
 		</script>	
     </body>
 </html>
