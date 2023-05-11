@@ -783,7 +783,7 @@ time {
 }
 
 #messages_wrapper.active_section .marquee {
-    animation: marquee 25s linear infinite;
+    animation: marquee 60s linear infinite;
 }
 
 .marquee:hover {
@@ -806,7 +806,7 @@ time {
 /* Make it move! */
 @keyframes marquee {
     0%   { top:   0px }
-    100% { top: -500px }
+    100% { top: -1500px }
 }
 
 /* =============== Contact styles ========================= 
